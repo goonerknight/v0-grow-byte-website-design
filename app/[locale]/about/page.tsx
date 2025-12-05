@@ -8,9 +8,9 @@ import { Mascot } from "@/components/mascot"
 import { getTranslations } from "@/lib/i18n"
 import { Locale } from "@/lib/i18n"
 
-export default function AboutPage({ params }: { params: { locale: Locale } }) {
-  const t = getTranslations(params.locale)
-  const locale = params.locale
+export default async function AboutPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params
+  const t = getTranslations(locale)
 
   return (
     <div className="min-h-screen">
@@ -37,6 +37,32 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
                 className="w-full max-w-md float-animation"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.about.team.title}</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              {t.about.team.subtitle}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {t.about.team.members.map((member, index) => (
+              <Card key={index} className="text-center group hover:border-primary/50 transition-all duration-300">
+                <CardContent className="p-8 space-y-4">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-secondary mx-auto flex items-center justify-center text-3xl font-bold text-primary-foreground mb-4">
+                    {member.name.charAt(0)}
+                  </div>
+                  <h3 className="text-xl font-semibold">{member.name}</h3>
+                  <p className="text-muted-foreground">{member.role}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

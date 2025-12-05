@@ -8,9 +8,9 @@ import { Mascot } from "@/components/mascot"
 import { getTranslations } from "@/lib/i18n"
 import { Locale } from "@/lib/i18n"
 
-export default function IndustriesPage({ params }: { params: { locale: Locale } }) {
-  const t = getTranslations(params.locale)
-  const locale = params.locale
+export default async function IndustriesPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params
+  const t = getTranslations(locale)
 
   const industries = [
     {

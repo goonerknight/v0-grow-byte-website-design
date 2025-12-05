@@ -5,6 +5,7 @@ import { Logo } from "@/components/logo"
 import { usePathname } from "next/navigation"
 import { getTranslations } from "@/lib/i18n"
 import { Locale } from "@/lib/i18n"
+import { Linkedin, Instagram } from "lucide-react"
 
 export function Footer() {
   const pathname = usePathname()
@@ -19,6 +20,25 @@ export function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="text-sm text-muted-foreground">{t.footer.description}</p>
+            <div className="flex items-center gap-4 pt-2">
+              <a
+                href="https://www.linkedin.com/company/grow-byte/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground transition-colors cursor-not-allowed opacity-50"
+                aria-label="Instagram"
+                onClick={(e) => e.preventDefault()}
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
           <div>

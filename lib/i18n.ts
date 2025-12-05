@@ -128,6 +128,28 @@ export const translations = {
         title: 'We build the digital backbone of modern companies',
         description: 'GrowByte is an AI-first digital agency dedicated to transforming how businesses operate. We combine cutting-edge technology with deep process expertise to deliver solutions that actually work.',
       },
+      team: {
+        title: 'Who We Are',
+        subtitle: 'We are a small team of developers, designers and marketers from Prague. Each of us has many successful projects and satisfied customers behind us. Our mission for GrowByte is to create affordable websites without compromising on quality.',
+      },
+      team: {
+        title: 'Who We Are',
+        subtitle: 'We are a small team of developers, designers and marketers from Prague. Each of us has many successful projects and satisfied customers behind us. Our mission for GrowByte is to create affordable websites without compromising on quality.',
+        members: [
+          {
+            name: 'Michael Rytíř',
+            role: 'Co-Founder, CEO',
+          },
+          {
+            name: 'Oliver Cingl',
+            role: 'Co-Founder, CTO',
+          },
+          {
+            name: 'Maxime Lozac\'h',
+            role: 'CMO, Design',
+          },
+        ],
+      },
       mission: {
         title: 'Our Mission',
         description: 'To empower businesses with AI-driven digital solutions that eliminate inefficiencies, accelerate growth, and create lasting competitive advantages. We believe every company deserves access to enterprise-grade technology and expertise.',
@@ -347,6 +369,24 @@ export const translations = {
       hero: {
         title: 'Vytváříme digitální páteř moderních společností',
         description: 'GrowByte je AI-first digitální agentura zaměřená na transformaci způsobu, jakým podniky fungují. Kombinujeme nejmodernější technologii s hlubokou odborností v procesech, abychom dodali řešení, která skutečně fungují.',
+      },
+      team: {
+        title: 'Kdo jsme?',
+        subtitle: 'Jsme malý tým vývojářů, designerů a markeťáků z Prahy. Každý za sebou máme spoustu úspěšných projektů a spokojených zákazníků. Naše mise pro GrowByte je vytvářet cenově přijatelné weby bez kompromisu na kvalitě.',
+        members: [
+          {
+            name: 'Michael Rytíř',
+            role: 'Co-Founder, CEO',
+          },
+          {
+            name: 'Oliver Cingl',
+            role: 'Co-Founder, CTO',
+          },
+          {
+            name: 'Maxime Lozac\'h',
+            role: 'CMO, Design',
+          },
+        ],
       },
       mission: {
         title: 'Naše mise',
