@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Target, Zap, Network, Code, BarChart3, CheckCircle2, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import { Mascot } from "@/components/mascot"
 
 export default function ServicesPage() {
   const services = [
@@ -101,13 +102,25 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
-        <div className="container mx-auto relative z-10 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
-            Everything you need to optimize, automate and scale your business
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive digital transformation services designed to give you a competitive edge
-          </p>
+        <div className="container mx-auto relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
+                Everything you need to optimize, automate and scale your business
+              </h1>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto lg:mx-0">
+                Comprehensive digital transformation services designed to give you a competitive edge
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <Mascot
+                variant="pointing-right"
+                width={350}
+                height={350}
+                className="w-full max-w-sm float-animation"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

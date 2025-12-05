@@ -3,8 +3,8 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Zap, Target, Users, TrendingUp, ArrowRight } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
+import { Mascot } from "@/components/mascot"
 
 export default function AboutPage() {
   return (
@@ -26,9 +26,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="flex justify-center">
-              <Image
-                src="/mascot.png"
-                alt="GrowByte Team"
+              <Mascot
+                variant="pointing-right"
                 width={400}
                 height={400}
                 className="w-full max-w-md float-animation"
