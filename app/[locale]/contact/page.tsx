@@ -119,10 +119,10 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold mb-1">{t.contact.info.email}</h3>
                         <a
-                          href="mailto:hello@growbyte.io"
+                          href="mailto:michael@growbyte.co"
                           className="text-muted-foreground hover:text-foreground transition-colors"
                         >
-                          hello@growbyte.io
+                          michael@growbyte.co
                         </a>
                       </div>
                     </div>
@@ -133,10 +133,10 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold mb-1">{t.contact.info.phone}</h3>
                         <a
-                          href="tel:+420123456789"
+                          href="tel:+420601121474"
                           className="text-muted-foreground hover:text-foreground transition-colors"
                         >
-                          +420 123 456 789
+                          +420 601 121 474
                         </a>
                       </div>
                     </div>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                     <h3 className="text-xl font-bold mb-2">{t.contact.consultation.title}</h3>
                     <p className="text-muted-foreground mb-4">{t.contact.consultation.description}</p>
                     <Button variant="outline" className="w-full bg-transparent" asChild>
-                      <a href={`mailto:hello@growbyte.io?subject=${encodeURIComponent(t.contact.consultation.title)}`}>
+                      <a href={`mailto:michael@growbyte.co?subject=${encodeURIComponent(t.contact.consultation.title)}`}>
                         {t.contact.consultation.button}
                       </a>
                     </Button>

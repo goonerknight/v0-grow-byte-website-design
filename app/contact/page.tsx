@@ -115,7 +115,7 @@ export default function ContactPage() {
                           href="mailto:hello@growbyte.io"
                           className="text-muted-foreground hover:text-foreground transition-colors"
                         >
-                          hello@growbyte.io
+                          michael@growbyte.co
                         </a>
                       </div>
                     </div>
@@ -126,10 +126,10 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold mb-1">Phone</h3>
                         <a
-                          href="tel:+420123456789"
+                          href="tel:+420601121474"
                           className="text-muted-foreground hover:text-foreground transition-colors"
                         >
-                          +420 123 456 789
+                          +420 601 121 474
                         </a>
                       </div>
                     </div>
